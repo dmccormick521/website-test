@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WebApplicationTest.Models;
 
 namespace WebApplicationTest.Data
 {
@@ -9,5 +10,6 @@ namespace WebApplicationTest.Data
             : base(options)
         {
         }
+        public DbSet<WebApplicationTest.Models.Reminder> Reminder { get; set; }
     }
 }
